@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" data-downloader="youtube">
+         <div class="logo-wrapper">
+            <img src="https://files.catbox.moe/sxkg9q.jpg" alt="Logo">
+        </div>
+        <header class="header">
+            <a href="index.html" class="back-link" title="Kembali"><i class="fas fa-arrow-left"></i></a>
+            <div class="header-content">
+                <h1>YouTube Downloader</h1>
+            </div>
+             <div id="theme-switcher" class="theme-switcher">
+                <button class="theme-btn" data-theme="light" title="Light Mode"><i class="fas fa-sun"></i></button>
+                <button class="theme-btn" data-theme="dark" title="Dark Mode"><i class="fas fa-moon"></i></button>
+            </div>
+        </header>
+
+        <div class="input-group">
+            <label for="url">URL YouTube</label>
+            <input type="text" id="url" class="url-input" placeholder="Tempel URL YouTube di sini">
+        </div>
+
+        <button id="btn" class="main-btn">
+            <i class="fas fa-download"></i>
+            <span>Download</span>
+        </button>
+
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p>Memproses tautan...</p>
+        </div>
+        
+        <div id="message"></div>
+
+        <div id="result" class="result">
+            <div class="video-info">
+                <img class="video-thumb" src="" alt="Video Thumbnail">
+                <p class="video-title"></p>
+            </div>
+            <div class="download-options"></div>
+        </div>
+        
+        <hr class="divider">
+        <footer class="owner-contact">
+            <a href="https://wa.me/6285855962331" target="_blank" class="contact-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://whatsapp.com/channel/0029Vb6DPnBIXnliEawZjb41" target="_blank" class="contact-link" title="WhatsApp Channel"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/gyzenvtx" target="_blank" class="contact-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
