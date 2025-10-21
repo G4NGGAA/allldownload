@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const patterns = {
             tiktok: /(tiktok\.com)/,
             instagram: /(instagram\.com)/,
-            youtube: /(youtube\.com|youtu\.be)/
+            youtube: /(youtu\.be)/
         };
         if (patterns[type] && !patterns[type].test(url)) {
             return { isValid: false, message: `URL tidak valid. Harap masukkan tautan ${type} yang benar.` };
@@ -157,4 +157,5 @@ document.addEventListener('DOMContentLoaded', () => {
             messageEl.style.display = 'block';
         }
     }
+
 });
